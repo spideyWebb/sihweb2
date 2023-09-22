@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
+
+*{
+  font-family: 'Ubuntu', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+.btn {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 50px;
+	margin: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 0px;
+	padding: 10px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 400px;
+	z-index: 1;
+	transition: 0.5s;
+	backdrop-filter: blur(15px);
+}
+
+.btn:hover a {
+	letter-spacing: 3px;
+}
+
+.btn a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+	transform: skewX(45deg) translate(0);
+	transition: 0.5s;
+	filter: blur(0px);
+}
+.btn:hover a::before {
+	transform: skewX(45deg) translate(200px);
+}
+
+html{
+ 
+  overflow-x: hidden;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+}
+
+*::selection{
+	background: linear-gradient(to right, red , yellow);
+}
+
+header{
+	text-transform: capitalize;
+	text-decoration: none;
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+	background: linear-gradient(to bottom, #5d326c, #350048);
+}
+
+section{
+  padding:2rem 9%;
+}
+
+.heading{
+	font-size: 2.5rem;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+.logo{
+	padding: .3rem;
+	display: flex;
+	justify-content: space-between;
+	gap:1rem;
+}
+
+.logo img{
+	width: 3.5rem;
+	height: 3.5rem;
+}
+
+.logo h4{
+	font-size: 3rem;
+	font-weight: 900;
+	color: #fff;
+}
+
+.navbar{
+	padding: .5rem;
+	font-size: 1.5rem;
+    padding-top: 1.2rem;
+}
+
+.navbar input[type=text]{
+	text-align: left;
+	font-size: 1.5rem;
+	border-radius: 20px;
+}
+
+.navbar a{
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 500;
+	align-items: center;
+	padding-left: .8rem;
+}
+
+.home{
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #3d7f91, #068f96, #009d8e, #1fa979, #5ab35a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  z-index: 0;
+}
+
+.home .conta h2{
+	font-size: 4.5rem;
+	font-weight: bold;
+}
+
+.home .conta p{
+	font-size: 2rem;
+	font-weight: 400;
+	padding-left: 10vh;
+}
+
+.course{
+	width: 100%;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to bottom, #5d326c, #350048);
+}
+
+.container {
+	width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.container .btn {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 100px;
+	margin: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .btn a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 0px;
+	padding: 10px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 400px;
+	z-index: 1;
+	transition: 0.5s;
+	backdrop-filter: blur(15px);
+}
+
+.container .btn:hover a {
+	letter-spacing: 3px;
+}
+
+.container .btn a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+	transform: skewX(45deg) translate(0);
+	transition: 0.5s;
+	filter: blur(0px);
+}
+.container .btn:hover a::before {
+	transform: skewX(45deg) translate(200px);
+}
+
+.container .btn::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	bottom: -5px;
+	width: 30px;
+	height: 10px;
+	background: #f00;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+
+.container .btn:hover::before /*lightup button*/ {
+	bottom: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+
+.container .btn::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	top: -5px;
+	width: 30px;
+	height: 10px;
+	background: #f00;
+	border-radius: 10px;
+	transition: 0.5s;
+	transition-delay: 0.5;
+}
+
+.container .btn:hover::after /*lightup button*/ {
+	top: 0;
+	height: 50%;
+	width: 80%;
+	border-radius: 30px;
+}
+
+.container .btn:nth-child(1)::before, /*chnage 1*/
+.container .btn:nth-child(1)::after {
+	background: #ff1f71;
+	box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
+		0 0 60px #ff1f71;
+}
+.container .btn:nth-child(2)::before, /* 2*/
+.container .btn:nth-child(2)::after {
+	background: #2db2ff;
+	box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
+		0 0 60px #2db2ff;
+}
+.container .btn:nth-child(3)::before, /* 3*/
+.container .btn:nth-child(3)::after {
+	background: #1eff45;
+	box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45,
+		0 0 60px #1eff45;
+}
+.container .btn:nth-child(4)::before, /*chnage 4*/
+.container .btn:nth-child(4)::after {
+	background: #ff1f71;
+	box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
+		0 0 60px #ff1f71;
+}
+
+.container .btn:nth-child(5)::before, /* 5*/
+.container .btn:nth-child(5)::after {
+	background: #2db2ff;
+	box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
+		0 0 60px #2db2ff;
+}
+
+.container .btn:nth-child(6)::before, /* 6*/
+.container .btn:nth-child(6)::after {
+	background: #1eff45;
+	box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45,
+		0 0 60px #1eff45;
+}
+
+.about{
+	min-height: 100vh;
+	/*background: linear-gradient(to right, red , yellow);;*/
+	background-image: radial-gradient(circle, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+
+.about  .box{
+	display: flex;
+	justify-content: space-between;
+    padding: 2rem;
+    gap:2rem;
+}
+
+.about  .box .content{
+	/*background-image: linear-gradient(to top, #9f1540, #c6432c, #d87a00, #d0b300, #a8eb12);;*/
+	width: 500px;
+	height: 400px;
+	padding: .5rem;
+}
+
+.about  .box .content h4{
+	font-size: 2rem;
+	color: #fff;
+	padding-bottom: 1.5rem;
+	font-weight: 600;
+}
+
+.about  .box .content p{
+	font-size: 1.2rem;
+	color: #fff;
+	padding-bottom: .8rem;
+}
+
+.about  .box .pic img{
+	width: 500px;
+	height: 400px;
+}
+
+.contact{
+	
+	background-image: linear-gradient(to top, #0d0b0c, #432a2c, #784c3c, #9f7b45, #aeb35a);
+	display: flex;
+    
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+
+.contact .box{
+	display: flex;
+	justify-content: space-between;
+	padding: 1.5rem;
+}
+
+.contact .box .cards{
+	color: #fff;
+	padding: 1.2rem;
+}
+
+.contact .box .cards p{
+	color:#b8b8ad;
+	padding: .3rem;
+}
+
+.contact .box .cards p:hover{
+	color: #fff;
+}
+
+
+.contact .box .card{
+	color: #fff;
+	display: flex;
+	flex-flow: column;
+	padding: 1.2rem;
+}
+
+.contact .box .card a{
+	color: #b8b8ad;
+	padding: .3rem;
+}
+
+.contact .box .card a:hover{
+	letter-spacing: .1rem;
+	color: #fff;
+}
+
+.footer{
+	background-color: #000000;
+	height: 1rem;
+	
+	
+}
+
+.footer .foot{
+	color: #fff;
+	display: flex;
+	gap:3rem;
+	text-align: center;
+}
+
